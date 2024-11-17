@@ -6,6 +6,7 @@ using TCSASystem.Blazor.EmployeeManagement.Models;
 
 namespace TCSASystem.Blazor.EmployeeManagement.Services;
 
+
 public interface IEmployeeService
 {
     Task<GetEmployeesResponse> GetEmployees();
@@ -75,26 +76,38 @@ public class EmployeeService : IEmployeeService
         {
             using (var context = _factory.CreateDbContext())
             {
-                context.Remove(id);
+                // Retrieve the employee entity by id
+                var employee = await context.Employees.FindAsync(id);
 
+                if (employee == null)
+                {
+                    response.StatusCode = 404;
+                    response.Message = "Employee not found.";
+                    return response;
+                }
+
+                // Remove the employee entity
+                context.Employees.Remove(employee);
+
+                // Save changes to the database
                 var result = await context.SaveChangesAsync();
 
-                if (result == 1)
+                if (result > 0) // Ensure changes were saved
                 {
                     response.StatusCode = 200;
-                    response.Message = "Employee deleted successfully";
+                    response.Message = "Employee deleted successfully.";
                 }
                 else
                 {
                     response.StatusCode = 400;
-                    response.Message = "Error occurred while deleted the employee.";
+                    response.Message = "Error occurred while deleting the employee.";
                 }
             }
         }
         catch (Exception ex)
         {
             response.StatusCode = 500;
-            response.Message = "Error deleted employee: " + ex.Message;
+            response.Message = "Error deleting employee: " + ex.Message;
         }
 
         return response;

@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("TCSASystem.Blazor.EmployeeManagement")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2aa531177cb2a14580109b328bc9fc51de42db48")]
 [assembly: System.Reflection.AssemblyProductAttribute("TCSASystem.Blazor.EmployeeManagement")]
 [assembly: System.Reflection.AssemblyTitleAttribute("TCSASystem.Blazor.EmployeeManagement")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

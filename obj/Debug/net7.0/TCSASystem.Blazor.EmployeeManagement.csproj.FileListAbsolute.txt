@@ -77,3 +77,4 @@ C:\Users\Hp\source\repos\TCSASystem.Blazor.EmployeeManagement\TCSASystem.Blazor.
 C:\Users\Hp\source\repos\TCSASystem.Blazor.EmployeeManagement\TCSASystem.Blazor.EmployeeManagement\obj\Debug\net7.0\TCSASystem.Blazor.EmployeeManagement.genruntimeconfig.cache
 C:\Users\Hp\source\repos\TCSASystem.Blazor.EmployeeManagement\TCSASystem.Blazor.EmployeeManagement\obj\Debug\net7.0\ref\TCSASystem.Blazor.EmployeeManagement.dll
 C:\Users\Hp\source\repos\TCSASystem.Blazor.EmployeeManagement\TCSASystem.Blazor.EmployeeManagement\bin\Debug\net7.0\Syncfusion.Blazor.Themes.dll
+C:\Users\Hp\source\repos\TCSASystem.Blazor.EmployeeManagement\TCSASystem.Blazor.EmployeeManagement\obj\Debug\net7.0\TCSASystem.Blazor.EmployeeManagement.sourcelink.json
